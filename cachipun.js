@@ -23,8 +23,6 @@ if (getRandom == 0) {
 
 console.log(n2);
 
-
-
 // comparar resultados
 // mostrar ganador
 // repetir si es necesario
@@ -35,27 +33,33 @@ console.log(n2);
 
 // let n1 = ["Piedra", "Papel", "Tijera"];
 // let n1 = [0, 1, 2];
-// let n2;
 
-// let n1 = prompt(`
-// Elija una opción:
-// 1. Piedra
-// 2. Papel
-// 3. Tijera
-// `);
+let userChoice = parseInt(
+    prompt(`
+        Elija una opción:
+        1. Piedra
+        2. Papel
+        3. Tijera
+    `);
+);
 
-// switch (n1) {
-//     case "1":
-//         console.log("Piedra");
-//         break;
-//     case "2":
-//         console.log("Papel");
-//         break;
-//     case "3":
-//         console.log("Tijera");
-//         break;
-// }
+let machineChoice = Math.floor(Math.random() * (4 - 1)) + 1;
 
-// function comparar(resultado1, resultado2) {
-//     return parseInt(n1)
-// }
+console.log(machineChoice);
+
+switch (n1) {
+    case "1":
+        console.log("Piedra");
+        break;
+    case "2":
+        console.log("Papel");
+        break;
+    case "3":
+        console.log("Tijera");
+        break;
+}
+
+function comparar(n1, n2) {
+    return parseInt(n1)
+}
+}
